@@ -1,0 +1,29 @@
+type Query {
+	getDepot(username: String!, password: String!): Depot!
+}
+
+type Mutation {
+	uploadFile(username: String!, password: String!, filename: String!, content: String!): String!
+    deleteFile(username: String!, password: String!, filename: String!): String!
+}
+
+type Subscription { 
+	subscribeDepot(username: String!, password: String!): SubscriptionResult!
+}
+
+# =============================================
+type Depot {
+    username: String!
+    password: String!
+	files: [File]
+}
+
+type File{
+    filename: String!
+    url: String!
+}
+
+type SubscriptionResult{
+    file: File!
+    isAdd: Boolean!
+}

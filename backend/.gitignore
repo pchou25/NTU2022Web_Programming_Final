@@ -1,0 +1,4 @@
+.env
+/node=modules
+files/*
+!files/README.md
