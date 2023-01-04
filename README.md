@@ -3,6 +3,7 @@
 ## Web Programming Final Project Group 46
 
 我們設計了一個一頁式網站，方便使用者在公用電腦、他人裝置上透過這個服務把一些小檔案(截圖、文字)暫存到server再下載至自己的裝置。其中server會定期清理暫存檔(預設六小時)，並以BASE64儲存使用者的檔案。
+![image](https://user-images.githubusercontent.com/17607649/210614662-80d64e2e-cc11-4810-a56c-b2baa2ce4d84.png)
 
 ## 功能
 
